@@ -31,8 +31,7 @@ pipeline {
          stage('Execute Maven') {
            steps {
              
-                git branch: 'master', url: 'https://github.com/devops4solutions/CI-example.git'
-             
+                sh 'mvn package'             
           }
         }
         
@@ -47,7 +46,7 @@ pipeline {
                  
              
                
-               sh "ansible-playbook main.yml -i inventories/dev/hosts --user jenkins --key-file ~/.ssh/id_rsa -e '@configs/dev.yml'"
+               sh "ansible-playbook main.yml -i inventories/dev/hosts --user jenkins --key-file ~/.ssh/id_rsa"
 
                
             
