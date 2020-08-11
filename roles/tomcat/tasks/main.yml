@@ -33,8 +33,6 @@
     mode: 0777
   become: true
   
-- name: copy sample index.html file
-  template: src=index.html.j2 dest=/opt/apache-tomcat-7.0.61/webapps/samples/index.html
 
 - name: copy war file
   copy: src=/target/LoginWebApp-1.war dest=/opt/apache-tomcat-7.0.61/webapps/
