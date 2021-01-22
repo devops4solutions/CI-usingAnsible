@@ -1,6 +1,6 @@
 version: 0.0
 os: linux
 files:
-  - source: ./target/LoginWebApp-1.war
+  - source: /tmp/LoginWebApp-1.war
     destination: /usr/share/tomcat/webapps
 
