@@ -1,6 +1,8 @@
 version: 0.0
 os: linux
-files:
-  - source: /tmp/LoginWebApp-1.war
-    destination: /usr/share/tomcat/webapps
+hooks:
+  BeforeInstall:
+    - location: before-install
+      timeout: 300
+      runas: root
 
