@@ -6,4 +6,4 @@ phases:
       - mvn package
   post_build:
     commands:
-      - aws s3 sync ./target $S3_BUCKET 
+      - aws s3 sync ./target arn:aws:s3:::java-artifacts-devops4solutions
