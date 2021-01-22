@@ -3,13 +3,4 @@ os: linux
 files:
   - source: ./target/LoginWebApp-1.war
     destination: /usr/share/tomcat/webapps
-hooks:
-  BeforeInstall:
-    - location: scripts/start_server
-      timeout: 300
-      runas: root
-  ApplicationStop:
-    - location: scripts/stop_server
-      timeout: 300
-      runas: root
 
