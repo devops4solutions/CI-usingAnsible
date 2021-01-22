@@ -12,3 +12,4 @@ phases:
 artifacts:
   files:
     - '**/LoginWebApp-1.war'
+  discard-paths: yes
