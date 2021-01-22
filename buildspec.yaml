@@ -1,0 +1,9 @@
+version: 0.2
+
+phases:
+  install: 
+    commands:
+      - mvn package
+  post_build:
+    commands:
+      - aws s3 sync ./target $S3_BUCKET 
