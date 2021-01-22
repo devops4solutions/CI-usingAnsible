@@ -11,4 +11,4 @@ phases:
 
 artifacts:
   files:
-    - target/LoginWebApp-1.jar
+    - ./target/LoginWebApp-1.jar
