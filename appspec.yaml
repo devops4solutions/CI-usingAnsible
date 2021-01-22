@@ -1,13 +1,10 @@
 version: 0.0
 os: linux
 files:
-  - source: /index.html
-    destination: /var/www/html/
+  - source: ./target/LoginWebApp-1.war
+    destination: /usr/share/tomcat/webapps
 hooks:
   BeforeInstall:
-    - location: scripts/install_dependencies
-      timeout: 300
-      runas: root
     - location: scripts/start_server
       timeout: 300
       runas: root
