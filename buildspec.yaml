@@ -11,4 +11,4 @@ phases:
 
 artifacts:
   files:
-    - /root/.m2/repository/com/devops4solutions/LoginWebApp/1/LoginWebApp-1.war
+    - '**/LoginWebApp-1.war'
