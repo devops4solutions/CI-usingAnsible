@@ -11,4 +11,4 @@ phases:
 
 artifacts:
   files:
-    - ./target/LoginWebApp-1.jar
+    - /root/.m2/repository/com/devops4solutions/LoginWebApp/1/LoginWebApp-1.war
