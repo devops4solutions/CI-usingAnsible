@@ -4,6 +4,6 @@ phases:
   install: 
     commands:
       - mvn package
-  artifacts:
+  post_build:
     files:
       - '**/*'
